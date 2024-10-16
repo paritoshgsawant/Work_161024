@@ -1,6 +1,6 @@
                                   //git commands//
 
-*Basic commands*
+*Basic commands* & git data
 
 git init  
 git status
