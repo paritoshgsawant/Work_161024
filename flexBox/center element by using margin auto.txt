@@ -1,0 +1,19 @@
+-------------------------HTML---------------------------
+<h1>Paritosh</h1>
+
+-------------------------CSS-----------------------------
+
+body{
+  background-color:skyblue;
+  width:100%;
+  height:300px;
+  display:flex;
+
+ 
+  }
+  h1{
+    
+    margin:auto;
+  }
+
+

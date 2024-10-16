@@ -1,0 +1,43 @@
+import "./styles.css";
+import {useState,useEffect} from 'react'
+
+export default function App() {
+  const[data,setData]=useState([])
+
+  useEffect(()=>{
+    fetch("https://reqres.in/api/users ").then((result)=>{
+      result.json().then((res)=>{
+
+        setData(res.data)
+        console.log(res)
+      })
+    })
+  },[])
+  return (
+  <>
+  <table style={{textAlign:"center" }}  border="1" >
+    <tr>
+      <td>one</td>
+      <td>two</td>
+      <td>three</td>
+      <td>four</td>
+      <td>five</td>
+    </tr>
+    {
+      data.map((item)=>
+
+      <tr>
+        <td>{item.id}</td>
+        <td>{item.email}</td>
+        <td>{item.first_name}</td>
+        <td>{item.last_name}</td>
+        <td>{item.avatar}</td>
+
+      </tr>
+      )
+    }
+
+    </table >
+  </>
+  );
+}

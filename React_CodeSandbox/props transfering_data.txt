@@ -1,0 +1,27 @@
+--------------------------------App.js-------------------------------------
+
+import "./styles.css";
+import User from './User'
+
+export default function App() {
+  return (
+    <>
+    <h1>Props component</h1>
+    <User name={"This is Paritosh Sawant"}/>
+    </>
+  );
+}
+
+
+--------------------------User.js-------------------------------------------------
+
+function User(props)
+{
+  return(
+    <>
+    {props.name}
+    </>
+  )
+}
+
+export default User;

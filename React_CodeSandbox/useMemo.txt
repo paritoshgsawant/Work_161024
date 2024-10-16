@@ -1,0 +1,25 @@
+import "./styles.css";
+import { useState, useMemo } from "react";
+export default function App() {
+  const [count, setCount] = useState(0);
+  const [multi, setMulti] = useState(2);
+
+  const multiMemo = useMemo(
+    function data() {
+      console.log("me render huva");
+      return count * 5;
+    },
+    [count]
+  );
+
+  return (
+    <>
+      <h1>{count}</h1>
+      <h1>{multi}</h1>
+      <h2>{multiMemo}</h2>
+
+      <button onClick={() => setCount(count + 1)}>add</button>
+      <button onClick={() => setMulti(multi * 2)}>mutli</button>
+    </>
+  );
+}

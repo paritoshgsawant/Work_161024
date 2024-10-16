@@ -1,0 +1,27 @@
+import "./styles.css";
+import User from "./User";
+import { useState } from "react";
+
+export default function App() {
+  const [idata, setIdata] = useState("");
+  const [pdata, setPdata] = useState("");
+
+  function formData(e) {
+    e.preventDefault();
+    console.log("input name : ", idata);
+    console.log("input  password :", pdata);
+  }
+
+  return (
+    <>
+      <form onSubmit={formData}>
+        Name: <input type="text" onChange={(e) => setIdata(e.target.value)} />
+        <br></br>
+        Pass :{" "}
+        <input type="password" onChange={(e) => setPdata(e.target.value)} />
+        <br></br>
+        <button>Submit</button>
+      </form>
+    </>
+  );
+}

@@ -1,0 +1,31 @@
+                                  //git commands//
+
+*Basic commands*
+
+git init  
+git status
+git add --a
+git commit -m "my first commit"  // use for commit your files
+git remote add origin  https:    //Paritosh_Sawant@bitbucket.org/paritosh_sawant/bootstrap.git // use for first time add remote repository path
+git push origin master --force   // use for first time push on remote
+git ls-files                     // showing track file
+git restore nav.html             // use for doing uncommited chages undo
+
+git mv footer.html section.html   // use for rename name
+git restore --stage  footer.html  // use for deleted file for recover
+git --help                        // use for all git commands
+git log                           // use for show all working history.
+git config --global alias.history "git push origin master"  // use for creating shortcut for log command
+git diff                          // use for compare working directory and staging area
+
+
+*Team work Commands*
+
+git branch  // use for check current branch
+git branch paritosh  // creating new  branch
+git checkout paritosh // use for moving master branch to paritosh branch
+git checkout -b paritosh  // creating new branch and move master to paritosh brach       
+git branch -d paritosh   // use for deleting branch
+git merge paritosh       // use for fast forwording merge
+git merge paritosh --no-ff -m "let's see without fast forwording"  // use for merge without fast forwoding
+
