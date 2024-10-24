@@ -1,6 +1,6 @@
                                   //git commands//
 
-*Basic commands* 241024
+*Basic commands*
 
 git init  
 git status
@@ -10,6 +10,8 @@ git remote add origin  https:    //Paritosh_Sawant@bitbucket.org/paritosh_sawant
 git push origin master --force   // use for first time push on remote
 git ls-files                     // showing track file
 git restore nav.html             // use for doing uncommited chages undo
+git remote -v    // to find origin path of git
+git remote rm origin  // to remove orgin path of repositary
 
 git mv footer.html section.html   // use for rename name
 git restore --stage  footer.html  // use for deleted file for recover
@@ -28,4 +30,11 @@ git checkout -b paritosh  // creating new branch and move master to paritosh bra
 git branch -d paritosh   // use for deleting branch
 git merge paritosh       // use for fast forwording merge
 git merge paritosh --no-ff -m "let's see without fast forwording"  // use for merge without fast forwoding
+
+
+*New commands*
+
+git clone https://github.com/anildalar/ReactJS-Development-16---React-Hooks.git   // clone from any repository
+git pull origin master --allow-unrelated-histories  // data pull time any repository 
+git remote set-url origin https://github.com/ersawantparitosh90/project3.git // if want change remote path or link another repo that time use 
 
