@@ -1,6 +1,6 @@
                                   //git commands//
 
-*Basic commands* & git data
+*Basic commands* 241024
 
 git init  
 git status
