@@ -1,0 +1,8 @@
+https://reqres.in/api/users               -------------------------------------------------------   not a list
+https://jsonplaceholder.typicode.com/posts --------------------------------------------- list of array
+
+
+This is all the veena data
+
+second this is master pull request
+
