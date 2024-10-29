@@ -2,7 +2,6 @@ https://reqres.in/api/users               --------------------------------------
 https://jsonplaceholder.typicode.com/posts --------------------------------------------- list of array
 
 
-This is all the veena data
+This is veena branch of 301024
 
-second this is master pull request
 
