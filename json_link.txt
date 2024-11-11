@@ -1,4 +1,4 @@
 https://reqres.in/api/users               -------------------------------------------------------   not a list
 https://jsonplaceholder.typicode.com/posts --------------------------------------------- list of array
 
-This work of paritosh sawant 111124
+This work of veena sawant 111124
