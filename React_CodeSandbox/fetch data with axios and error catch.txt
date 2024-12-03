@@ -1,0 +1,46 @@
+import "./styles.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+export default function App() {
+  const [data, setData] = useState([]);
+
+
+
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((result) => {
+        setData(result.data);
+      })
+      .catch(() => {
+        document.write("page not found: ", "404 Error");
+      });
+  }, []);
+
+  return (
+    <div className="App">
+      <>
+        <h1>Table data</h1>
+        <table border="1" style={{ borderCollapse: "collapse", color: "red" }}>
+          <tr>
+            <td>userID</td>
+            <td>ID</td>
+            <td>Title</td>
+            <td>body</td>
+          </tr>
+          {data.map((i) => {
+            return (
+              <tr>
+                <td>{i.userId}</td>
+                <td>{i.id}</td>
+                <td>{i.title}</td>
+                <td>{i.body}</td>
+              </tr>
+            );
+          })}
+        </table>
+      </>
+    </div>
+  );
+}
