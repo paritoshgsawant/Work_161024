@@ -1,0 +1,39 @@
+import { useState } from "react";
+
+function User(props) {
+  const [name, setName] = useState();
+  const [pass, setPass] = useState();
+
+  function abc(e) {
+    e.preventDefault();
+    console.log(name, pass);
+  }
+
+  return (
+    <>
+      <h1> {props.name} </h1>
+      <br />
+
+      <form onSubmit={abc}>
+        name :{" "}
+        <input
+          type="text"
+          placeholder="enter name"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <br />
+        <br />
+        pass :{" "}
+        <input
+          type="text"
+          placeholder="enter pass"
+          onChange={(e) => setPass(e.target.value)}
+        />
+        <br />
+        <br />
+        <button>submit</button>
+      </form>
+    </>
+  );
+}
+export default User;
