@@ -1,2 +1,3 @@
 test krtoy fkt
 hi mazi dusri commit ahe
+ata hi mazi tisri commit asel
